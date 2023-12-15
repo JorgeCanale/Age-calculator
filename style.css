@@ -1,0 +1,129 @@
+
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-grey);
+}
+
+.card {
+  background-color: var(--White);
+  width: 600px;
+  border-radius: 16px 16px 160px 16px;
+}
+
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  gap:32px;
+}
+
+.inputs-container label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid var(--Light-grey); 
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid var(--Purple);
+}
+
+input::placeholder{
+    font-size:  40px;
+    font-weight: 600;
+}
+.mid-section{
+    display: flex;
+    align-items: center;
+}
+
+.mid-section hr{
+    width: 100%;
+    color: var(--Light-grey);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Purple);
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.output-section h1{
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+
+.output-section span{
+    color: var(--Purple);
+}
+
+small{
+    color: red;
+}
+
+@media screen and (max-width: 600px){
+    .card{
+        width: 360px;
+    }
+    .container{
+        padding: 16px;
+    }
+    form{
+        margin-bottom: 80px;
+        gap:0;
+        justify-content: space-between;
+    }
+    .output-section{
+        margin-top: 80px;
+    }
+    .output-section h1{
+        font-size: 56px;
+    }
+}

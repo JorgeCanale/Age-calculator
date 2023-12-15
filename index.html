@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div class="card">
+      <div class="container">
+        <div class="input-section">
+          <form class="form">
+            <div class="inputs-container">
+              <div class="input-container">
+                <label for="day">day</label>
+                <input id="day" placeholder="DD" type="number" />
+                <small></small>
+              </div>
+              <div class="input-container">
+                <label for="month">month</label>
+                <input id="month" placeholder="MM" type="number" />
+                <small></small>
+              </div>
+              <div class="input-container">
+                <label for="year">year</label>
+                <input id="year" placeholder="YYYY" type="number" />
+                <small></small>
+              </div>
+            </div>
+            <div class="mid-section">
+              <hr />
+              <button type="submit" class="btn" id="btn">
+                <img src="/assets/images/icon-arrow.svg" alt="icon" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="output-section">
+          <div class="year-section">
+            <h1><span id="yy">--</span> YEAR</h1>
+          </div>
+          <div class="month-section">
+            <h1><span id="mm">--</span>MONTH</h1>
+          </div>
+          <div class="day-section">
+            <h1><span id="dd">--</span>DAY</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
